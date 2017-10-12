@@ -1,6 +1,6 @@
 import UIKit
 
-class SingleComponentPickerViewController: UIViewController, UIPickerViewDataSource {
+class SingleComponentPickerViewController: UIViewController, UIPickerViewDataSource , UIPickerViewDelegate{
 
     override func viewDidLoad() {
         

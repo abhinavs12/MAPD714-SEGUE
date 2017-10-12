@@ -27,9 +27,16 @@
                                     <constraint firstAttribute="width" constant="46" id="XbL-pK-L2U"/>
                                 </constraints>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="V4R-Z6-fvZ" eventType="touchUpInside" id="DKg-E8-17K"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-Gk-Lix">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="V4R-Z6-fvZ" id="kBX-V9-LUM"/>
+                                    <outlet property="delegate" destination="V4R-Z6-fvZ" id="0MU-Vp-YJ4"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,6 +49,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="bnK-fK-frh"/>
+                    <connections>
+                        <outlet property="doublePicker" destination="8uJ-Gk-Lix" id="rIe-EP-iy0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dc-Tp-Btq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,10 +144,6 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEe-Zg-zFd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="9Lv-A3-TeN" id="trO-Bm-6qG"/>
-                                    <outlet property="delegate" destination="9Lv-A3-TeN" id="EHt-bo-hYY"/>
-                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fo-TW-Ps9">
                                 <rect key="frame" x="164" y="318" width="46" height="30"/>
@@ -145,9 +151,6 @@
                                     <constraint firstAttribute="width" constant="46" id="Fxu-3s-EBg"/>
                                 </constraints>
                                 <state key="normal" title="Select"/>
-                                <connections>
-                                    <action selector="onButtonPressed:" destination="9Lv-A3-TeN" eventType="touchUpInside" id="WyP-I7-EQl"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,9 +163,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="EDY-Jy-UIc"/>
-                    <connections>
-                        <outlet property="singlePicker" destination="MEe-Zg-zFd" id="ohF-fz-lKU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxe-K6-Qhu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,9 +198,6 @@
                                     <constraint firstAttribute="width" constant="53" id="B7V-YK-3RX"/>
                                 </constraints>
                                 <state key="normal" title="Select"/>
-                                <connections>
-                                    <action selector="onButtonPressed:" destination="GUh-wB-nYV" eventType="touchUpInside" id="MbA-bN-9Zz"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
